@@ -28,6 +28,15 @@ life-health-reinsurance-simulator/
 
 ---
 
+## 📊 Actuarial Analysis & Insights
+This simulator demonstrates core quantitative risk management principles used in the reinsurance industry. By using the parameter sets shown in the demo (1,000 policies, $10,000 Std. Deviation), we can observe:
+
+* **Tail Risk & Solvency II:** The dashboard calculates the **99.5% Value-at-Risk (VaR)**. In the EU, this is the standard proxy for regulatory capital requirements. It represents the "1-in-200-year event"—the amount of capital a company must hold to stay solvent during extreme loss years.
+* **The Diversification Benefit:** In the "Combined" portfolio view, you can observe how the total volatility is dampened compared to analyzing Life and Health in silos. This visualizes how a diversified insurance book reduces a firm's overall risk profile.
+* **Volatility vs. Stability:** By maximizing the Standard Deviation, the simulator highlights "High Severity" events, which are the primary drivers for purchasing reinsurance treaties to protect a balance sheet.
+
+---
+
 ## Notebooks / Analysis
 1. **01_portfolio_design.ipynb** – Create and configure life and health insurance portfolios.  
 2. **02_loss_simulation.ipynb** – Run loss simulations for the portfolios with different parameters.  
@@ -61,6 +70,14 @@ The `app.py` provides an **interactive dashboard** to explore portfolio scenario
 ![Health Portfolio](demo_data/demo_portfolio_health.png)  
 #### Combined Portfolio
 ![Combined Portfolio](demo_data/demo_portfolio_combined.png)
+
+---
+
+## 🚀 Future Outlook & Improvements
+This project serves as a foundation for more complex actuarial engines. Planned improvements include:
+* **Correlation Modeling:** Implementing Copula-based simulations to model the dependency between different risk types (Life vs. Health).
+* **Contractual Structures:** Adding logic for specific reinsurance treaties like **Excess-of-Loss (XoL)** and **Quota Share**.
+* **Macro-Economic Factors:** Factoring in medical inflation and interest rate sensitivity for long-term health and life projections.
 
 ---
 
